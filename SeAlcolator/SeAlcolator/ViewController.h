@@ -11,5 +11,19 @@
 @interface ViewController : UIViewController
 
 
+@property (weak, nonatomic) IBOutlet UITextField *beerPercentTextField;
+@property (weak, nonatomic) IBOutlet UISlider *beerCountSlider;
+@property (weak, nonatomic) IBOutlet UILabel *resultLabel;
+
+
+
+
+- (IBAction)textFieldDidChange:(UITextField *)sender;
+- (IBAction)sliderValueDidChange:(UISlider *)sender;
+- (IBAction)buttonPressed:(UIButton *)sender;
+- (IBAction)tapGestureDidFired:(UITapGestureRecognizer *)sender;
+
+
+
 @end
 
